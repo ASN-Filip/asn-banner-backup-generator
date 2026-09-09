@@ -43,7 +43,7 @@ export function generateRiveHTML(jsFileName, width, height) {
       var clickTag=''; 
   </script>
 
-  <script src="https://s0.2mdn.net/creatives/assets/5617025/rive.js"></script>
+  <script src="https://s0.2mdn.net/creatives/assets/5692068/rive_v2.js"></script>
   <style>
     html, body {
       margin: 0;
