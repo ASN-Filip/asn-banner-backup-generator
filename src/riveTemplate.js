@@ -44,7 +44,6 @@ export function generateRiveHTML(jsFileName, width, height) {
   </script>
 
   <script src="https://s0.2mdn.net/creatives/assets/5617025/rive.js"></script>
-
   <style>
     html, body {
       margin: 0;
@@ -155,6 +154,7 @@ export function generateRiveHTML(jsFileName, width, height) {
         canvas: canvas,
         stateMachines: "State Machine 1",
         autoplay: true,
+        isTouchScrollEnabled: true,
         onLoad: function () {
           riveInstance.resizeDrawingSurfaceToCanvas();
           window.riveInstance = riveInstance;
