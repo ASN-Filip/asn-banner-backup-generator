@@ -24,10 +24,9 @@ describe('generateRiveHTML', () => {
     assert.match(html, /<meta name="ad\.size" content="width=300,height=250">/);
   });
 
-  it('includes the Rive CDN script', () => {
+  it('includes the Rive v2 CDN script', () => {
     const html = generateRiveHTML('test.js', 160, 600);
-    assert.match(html, /rive\.js/);
-    assert.match(html, /s0\.2mdn\.net/);
+    assert.match(html, /<script src="https:\/\/s0\.2mdn\.net\/creatives\/assets\/5692068\/rive_v2\.js"><\/script>/);
   });
 
   it('includes getBannerSize function with fallback dimensions', () => {
